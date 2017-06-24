@@ -1,5 +1,12 @@
+{% load staticfiles %}
+
 <html>
     <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/boocarapp.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
         <title>vrooom</title>
         <h1>Ben and Andi</h1>
         <h1>Places to Go, People to See!</h1>
@@ -15,8 +22,8 @@
             </h1>
         </div>
 
-        <div>
-            <p>Car pic here</p>
+        <img>
+            <img src="{% static 'IMG_CAR_2.jpg' %}" width="100%">
         </div>
 
     </body>
