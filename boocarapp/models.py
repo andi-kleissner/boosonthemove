@@ -3,14 +3,20 @@ from django.utils import timezone
 
 
 class CarPart(models.Model):
-    purchaser = models.CharField(max_length=200)
     name = models.CharField(max_length=200)
+    item_name = models.CharField(max_length=200)
     purchased = models.CharField(max_length=200)
+    note = models.CharField(max_length=500)
+    amount = models.CharField(max_length=15)
 
-    def purchase(self, purchaser):
+    def purchase(self, name):
         self.purchased = "True"
-        self.purchaser = purchaser
+        self.name = name
+        self.save()
+
+    def set_note(self, text):
+        self.note = text
         self.save()
 
     def __str__(self):
-        return self.name
+        return self.item_name

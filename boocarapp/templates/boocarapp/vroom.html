@@ -45,8 +45,8 @@
 
         function myHover(element)
         {
-            var x = document.getElementById('info');
-            x.style.display = 'block';
+            <!--var x = document.getElementById('info');-->
+            <!--x.style.display = 'block';-->
 
             var hoveredElement = element;
             var coordStr = element.getAttribute('coords');
@@ -62,12 +62,41 @@
                 case 'rect':
                     drawRect(coordStr);
             }
+
+            var areaName = element.getAttribute('id');
+
+            switch (areaName)
+            {
+                case 'wheel1':
+                    var x = document.getElementById('container1');
+                    x.style.display = 'block';
+                    break;
+                case 'wheel2':
+                    var x = document.getElementById('container2');
+                    x.style.display = 'block';
+                    break;
+                case 'wheel3':
+                    var x = document.getElementById('container3');
+                    x.style.display = 'block';
+                    break;
+                case 'wheel4':
+                    var x = document.getElementById('container4');
+                    x.style.display = 'block';
+                    break;
+                default:
+                    break;
+            }
         }
 
         function myLeave()
         {
-            var x = document.getElementById('info');
-            x.style.display = 'none';
+            <!--var x = document.getElementById('info');-->
+            <!--x.style.display = 'none';-->
+
+            document.getElementById('container1').style.display = 'none';
+            document.getElementById('container2').style.display = 'none';
+            document.getElementById('container3').style.display = 'none';
+            document.getElementById('container4').style.display = 'none';
 
             var canvas = byId('myCanvas');
             hdc.clearRect(0, 0, canvas.width, canvas.height);
@@ -115,41 +144,60 @@
 
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/boocarapp.css' %}">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'boocarapp/css/boocarapp.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald" rel="stylesheet">
 
         <title>vrooom</title>
-        <h1>Ben and Andi</h1>
-        <h1>Places to Go, People to See!</h1>
-        <div>
-            <h1>It is a bit unbelievable, but the two Boos have survived
-                with just 1 car over the past 7 years. Our Prius has
-                200,000 miles and is on its last legs. If you would like
-                to contribute to future Boo adventures, click on a part of
-                the car you'd like to gift us!
 
-            </h1>
+        <img src="{% static 'boocarapp/images/HEADER.png' %}" style="width:100%">
+
+        <div bgcolor="#e2e0de">
+            <h3>If you would like to contribute to a new hybrid to power
+                Boo adventures, click on a part of the car you'd like to gift us!
+
+            </h3>
         </div>
 
     </head>
 
-    <body onload='myInit()'>
+    <body onload='myInit()' bgcolor="#e2e0de">
         <canvas id='myCanvas'></canvas>     <!-- gets re-positioned in myInit(); -->
         <div class="car_container">
             <img src="{% static 'IMG_CAR_1.png' %}" usemap='#imgmap_css_container_car_image' class='imgmap_css_container' title='car_image' alt='car_image' id='img-car_image' />
             <map id='car_image' name='imgmap_css_container_car_image'>
-                <area alt="" title="" href="#" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="236,210,277,227" />
-                <area alt="" title="" href="#" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="356,178,391,226" />
-                <area alt="" title="" href="#" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="178,170,220,225" />
-                <area alt="" title="" href="#" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="48,207,99,228" />
+                <area id="wheel1" alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="236,210,277,227" />
+                <area id="wheel2" alt="" title="" href="/boocarapp/go_for_it/wheel2.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="356,178,391,226" />
+                <area id="wheel3" alt="" title="" href="/boocarapp/go_for_it/wheel3.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="178,170,220,225" />
+                <area id="wheel4" alt="" title="" href="/boocarapp/go_for_it/wheel4.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="48,207,99,228" />
+                <area id="wheel4" alt="" title="" href="/boocarapp/go_for_it/wheel4.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="48,207,99,228" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="334,118,353,140" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="298,157,317,177" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="238,149,257,168" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="223,98,243,117" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="112,110,131,129" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="61,114,80,131" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="58,143,77,161" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="23,109,40,127" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="358,330,378,351" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="389,464,405,479" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="248,441,270,463" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="133,442,151,458" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="95,438,113,458" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="78,342,99,360" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="170,263,190,282" />
+                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="185,314,238,391" />
             </map>
         </div>
 
+
+
+
         <div class="hidden_container">
-            <p>
-                <div id="info">Note about the item</div>
-            </p>
+            {% for i in car_data %}
+                <div id='container{{ forloop.counter }}' style="display:none">{{ i.note }} <br> {{ i.amount }}</div>
+            {% endfor %}
         </div>
+
         <div class="clearfix"></div>
     </body>
 </html>

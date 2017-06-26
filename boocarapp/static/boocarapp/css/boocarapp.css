@@ -1,0 +1,69 @@
+{% load staticfiles %}
+
+h1 {
+    color: #a9b0bc;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.heading_area {
+    background: url("{% static 'boocarapp/images/HEADER.png' %}") 50% no-repeat right bottom;
+    height:650px;
+    background-repeat:no-repeat;
+}
+
+h2 {
+    color: #a9b0bc;
+    padding-left: 150px;
+    padding-right: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+    color: #a9b0bc;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+canvas
+{
+    pointer-events: none;       /* make the canvas transparent to the mouse - needed since canvas is position infront of image */
+    position: absolute;
+}
+
+#info {
+    display:none;
+    width:100%;
+    height:150px;
+    padding: 10px;
+    background-color:skyblue;
+    margin:auto;
+}
+
+.hidden_container {
+    float:right;
+    width:40%;
+    background-color:#a9b0bc;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100px;
+    padding-top: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.car_container {
+    float:left;
+    padding-left:30px;
+    width:40%;
+}
+
+.clearfix{
+    clear:both
+}
+
+#form {
+    color: #a9b0bc;
+    padding-left: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
