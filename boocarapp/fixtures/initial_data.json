@@ -1,0 +1,38 @@
+[
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 1,
+    "fields": {
+      "name": "None",
+      "item_name": "wheel1",
+      "purchased": "False",
+      "note": "Click me! WHEEL: The wheels of love go round and round.",
+      "amount": "$100"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 2,
+    "fields": {
+      "name": "None",
+      "item_name": "wheel2",
+      "purchased": "False",
+      "note": "Click me! WHEEL: The wheels of love go round and round.",
+      "amount": "$100"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 1,
+    "fields": {
+      "_destination_model_text": "Mombasa"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 2,
+    "fields": {
+      "_destination_model_text": "Dakar"
+    }
+  }
+]

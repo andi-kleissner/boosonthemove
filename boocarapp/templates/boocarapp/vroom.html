@@ -45,9 +45,6 @@
 
         function myHover(element)
         {
-            <!--var x = document.getElementById('info');-->
-            <!--x.style.display = 'block';-->
-
             var hoveredElement = element;
             var coordStr = element.getAttribute('coords');
             var areaType = element.getAttribute('shape');
@@ -72,16 +69,37 @@
                     x.style.display = 'block';
                     break;
                 case 'wheel2':
-                    var x = document.getElementById('container2');
-                    x.style.display = 'block';
+                    document.getElementById('container2').style.display = 'block';
                     break;
                 case 'wheel3':
-                    var x = document.getElementById('container3');
-                    x.style.display = 'block';
+                    document.getElementById('container3').style.display = 'block';
                     break;
                 case 'wheel4':
-                    var x = document.getElementById('container4');
-                    x.style.display = 'block';
+                    document.getElementById('container4').style.display = 'block';
+                    break;
+                case 'mirror':
+                    document.getElementById('container5').style.display = 'block';
+                    break;
+                case 'door':
+                    document.getElementById('container6').style.display = 'block';
+                    break;
+                case 'reardoor':
+                    document.getElementById('container7').style.display = 'block';
+                    break;
+                case 'rearwindow':
+                    document.getElementById('container8').style.display = 'block';
+                    break;
+                case 'taillight':
+                    document.getElementById('container9').style.display = 'block';
+                    break;
+                case 'trunk':
+                    document.getElementById('container12').style.display = 'block';
+                    break;
+                case 'handle':
+                    document.getElementById('container11').style.display = 'block';
+                    break;
+                case 'lefttaillight':
+                    document.getElementById('container10').style.display = 'block';
                     break;
                 default:
                     break;
@@ -90,13 +108,20 @@
 
         function myLeave()
         {
-            <!--var x = document.getElementById('info');-->
-            <!--x.style.display = 'none';-->
-
             document.getElementById('container1').style.display = 'none';
             document.getElementById('container2').style.display = 'none';
             document.getElementById('container3').style.display = 'none';
             document.getElementById('container4').style.display = 'none';
+            document.getElementById('container5').style.display = 'none';
+            document.getElementById('container6').style.display = 'none';
+            document.getElementById('container7').style.display = 'none';
+            document.getElementById('container8').style.display = 'none';
+            document.getElementById('container9').style.display = 'none';
+            document.getElementById('container10').style.display = 'none';
+            document.getElementById('container11').style.display = 'none';
+            document.getElementById('container12').style.display = 'none';
+            document.getElementById('container13').style.display = 'none';
+
 
             var canvas = byId('myCanvas');
             hdc.clearRect(0, 0, canvas.width, canvas.height);
@@ -169,15 +194,14 @@
                 <area id="wheel2" alt="" title="" href="/boocarapp/go_for_it/wheel2.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="356,178,391,226" />
                 <area id="wheel3" alt="" title="" href="/boocarapp/go_for_it/wheel3.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="178,170,220,225" />
                 <area id="wheel4" alt="" title="" href="/boocarapp/go_for_it/wheel4.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="48,207,99,228" />
-                <area id="wheel4" alt="" title="" href="/boocarapp/go_for_it/wheel4.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="48,207,99,228" />
-                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="334,118,353,140" />
-                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="298,157,317,177" />
-                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="238,149,257,168" />
-                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="223,98,243,117" />
-                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="112,110,131,129" />
-                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="61,114,80,131" />
-                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="58,143,77,161" />
-                <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="23,109,40,127" />
+                <area id="mirror" alt="" title="" href="/boocarapp/go_for_it/mirror.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="334,118,353,140" />
+                <area id="door" alt="" title="" href="/boocarapp/go_for_it/door.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="298,157,317,177" />
+                <area id="reardoor" alt="" title="" href="/boocarapp/go_for_it/reardoor.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="238,149,257,168" />
+                <area id="rearwindow" alt="" title="" href="/boocarapp/go_for_it/rearwindow.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="223,98,243,117" />
+                <area id="taillight" alt="" title="" href="/boocarapp/go_for_it/taillight.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="112,110,131,129" />
+                <area id="trunk" alt="" title="" href="/boocarapp/go_for_it/trunk.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="61,114,80,131" />
+                <area id="handle" alt="" title="" href="/boocarapp/go_for_it/handle.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="58,143,77,161" />
+                <area id="lefttaillight" alt="" title="" href="/boocarapp/go_for_it/lefttaillight.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="23,109,40,127" />
                 <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="358,330,378,351" />
                 <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="389,464,405,479" />
                 <area alt="" title="" href="/boocarapp/go_for_it/wheel1.html" onmouseover='myHover(this);' onmouseout='myLeave();' shape="rect" coords="248,441,270,463" />
