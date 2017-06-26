@@ -20,5 +20,214 @@
       "note": "Click me! WHEEL: The wheels of love go round and round.",
       "amount": "$100"
     }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 3,
+    "fields": {
+      "name": "None",
+      "item_name": "wheel3",
+      "purchased": "False",
+      "note": "Click me! WHEEL: The wheels of love go round and round.",
+      "amount": "$100"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 4,
+    "fields": {
+      "name": "None",
+      "item_name": "wheel4",
+      "purchased": "False",
+      "note": "Click me! WHEEL: The wheels of love go round and round.",
+      "amount": "$100"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 5,
+    "fields": {
+      "name": "None",
+      "item_name": "mirror",
+      "purchased": "False",
+      "note": "Click Me! MIRROR: Don't look back, the best is yet to come!",
+      "amount": "$30"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 6,
+    "fields": {
+      "name": "None",
+      "item_name": "door",
+      "purchased": "False",
+      "note": "Click me! FRONT DOOR: Jump on in!",
+      "amount": "$200"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 7,
+    "fields": {
+      "name": "None",
+      "item_name": "reardoor",
+      "purchased": "False",
+      "note": "Click me! REAR DOOR: Baby boo needs to sit somewhere!",
+      "amount": "$150"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 8,
+    "fields": {
+      "name": "None",
+      "item_name": "rearwindow",
+      "purchased": "False",
+      "note": "Click me! REAR WINDOW: Love sees no boundaries!",
+      "amount": "$150"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 9,
+    "fields": {
+      "name": "None",
+      "item_name": "taillight",
+      "purchased": "False",
+      "note": "Click me! RIGHT TAIL LIGHT: LEDs only, so the cops will never get a fix-it ticket on this one.",
+      "amount": "$30"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 10,
+    "fields": {
+      "name": "None",
+      "item_name": "lefttaillight",
+      "purchased": "False",
+      "note": "Click me! LEFT TAIL LIGHT: Shake your tail feathers.",
+      "amount": "$25"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 11,
+    "fields": {
+      "name": "None",
+      "item_name": "trunk",
+      "purchased": "False",
+      "note": "Click me! TRUNK: Gotta fit a moose in the caboose.",
+      "amount": "$800"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 11,
+    "fields": {
+      "name": "None",
+      "item_name": "handle",
+      "purchased": "False",
+      "note": "Click me! HANDLE: hold on to the love of your life!",
+      "amount": "$55"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 12,
+    "fields": {
+      "name": "None",
+      "item_name": "horn",
+      "purchased": "False",
+      "note": "Click me! HORN: Watch out! Boo coming through!",
+      "amount": "$70"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 13,
+    "fields": {
+      "name": "None",
+      "item_name": "break",
+      "purchased": "False",
+      "note": "Click me! BREAK: Stop, in the name of love...",
+      "amount": "$75"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 14,
+    "fields": {
+      "name": "None",
+      "item_name": "break",
+      "purchased": "False",
+      "note": "Click me! GAS PEDAL: Pedal to the metal!",
+      "amount": "$160"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 15,
+    "fields": {
+      "name": "None",
+      "item_name": "break",
+      "purchased": "False",
+      "note": "Click me! GAS PEDAL: Pedal to the metal!",
+      "amount": "$160"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 15,
+    "fields": {
+      "name": "None",
+      "item_name": "windshield",
+      "purchased": "False",
+      "note": "Click me! WIND SHIELD: nothing like an open road, speedy car, and lover at your side",
+      "amount": "$400"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 16,
+    "fields": {
+      "name": "None",
+      "item_name": "touchscreen",
+      "purchased": "False",
+      "note": "Click me! TOUCH SCREEN: where are we going again?",
+      "amount": "$300"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 17,
+    "fields": {
+      "name": "None",
+      "item_name": "airconditioning",
+      "purchased": "False",
+      "note": "Click me! AIR CONDITIONING: Some like it hot, some not",
+      "amount": "$300"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 18,
+    "fields": {
+      "name": "None",
+      "item_name": "airconditioning",
+      "purchased": "False",
+      "note": "Click me! CENTER CONSOLE: stash your sunnies and snacks and off we go",
+      "amount": "$90"
+    }
+  },
+  {
+    "model": "boocarapp.CarPart",
+    "pk": 19,
+    "fields": {
+      "name": "None",
+      "item_name": "seat",
+      "purchased": "False",
+      "note": "Click me! SEAT: On the road of life, both boos are drivers, but only one is in the passenger seat at a time.",
+      "amount": "$250"
+    }
   }
 ]
