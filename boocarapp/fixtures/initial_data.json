@@ -158,7 +158,7 @@
     "pk": 15,
     "fields": {
       "name": "None",
-      "item_name": "break",
+      "item_name": "pedal",
       "purchased": "False",
       "note": "Click me! GAS PEDAL: Pedal to the metal!",
       "amount": "$160"
